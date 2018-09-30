@@ -1,0 +1,106 @@
+body{
+    font-family: titillium web;
+    background-color: #22313f;
+    max-width: 80%;
+    margin: 20px;
+    color: aliceblue;
+    list-style-type: none;
+}  
+main{
+    width:100%;
+    max-width: 1600px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "article article aside"
+    "footer footer footer";
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 80px auto auto 80px;
+}
+img{
+    max-width: 100%;
+}
+h2{
+    text-decoration: underline;
+}
+.header_g{
+    background-image: url(../images/headerback.jpeg) /*Photo by Markus Spiske on Unsplash*/;
+    padding-left: 50%;
+    padding-right: -50%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.nav_g{
+    border: solid cornsilk;
+    border-radius: 10px;
+    min-height: 50px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.nav_ul{
+    list-style-type: none;
+    position: relative; 
+}
+.nav_li{
+    float:left;
+    margin-right: 15px;
+}
+.nav_a{
+    text-decoration: none;
+    color:aliceblue;
+}
+.aside_a{
+    color: #22313f;
+}
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.aside_g{
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: aliceblue;
+    color: #22313f;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    border: solid #22313f;
+    border-radius: 10px;
+}
+.aside_sec{
+    border: #22313f solid;
+}
+.main_section{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    max-width: 100%;
+    margin-top: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.main_article{
+    padding-left: 10px;
+    background-color: aliceblue;
+    color: #22313f;
+    min-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    max-width: 800px;
+}
+.main_footer{
+    border:#22313f;
+    border-radius: 10px;
+    background-color: aliceblue;
+    color: #22313f;
+    min-width: 100%;
+    margin-top: 15px;
+    padding-left: 5px;
+}
