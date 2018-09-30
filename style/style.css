@@ -22,6 +22,13 @@ main{
 img{
     max-width: 100%;
 }
+figure>img {
+    background-color: #22313f;
+    padding: 3px;
+}
+figcaption{
+    border-bottom: 2px solid #22313f;
+}
 h2{
     text-decoration: underline;
 }
@@ -54,19 +61,21 @@ h2{
 .aside_a{
     color: #22313f;
 }
+a{
+    color:#22313f;
+}
 a:hover{
     text-decoration: underline;
     color: black;
 }
 .aside_g{
-    margin-top: 5px;
+    margin-top: 17px;
     margin-left: 10px;
     background-color: aliceblue;
     color: #22313f;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
     grid-row-start: 3;
     grid-row-end: 6;
     grid-column-start: 3;
